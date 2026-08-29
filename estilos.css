@@ -8,6 +8,10 @@ a{
     width: 75px;
     height: auto;
 }
+p{
+    display: flex;
+    justify-content: center;
+}
 h1{
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 1px rgb(250, 233, 3);
@@ -33,22 +37,39 @@ body{
     color: rgb(250, 233, 3);
 }
 form{
+    border-radius: 10px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: auto;
+    width: 35%;
     padding: 10px;
     background-color: rgb(250, 233, 3);
-    margin: 5px;
+    margin: 0 auto;
     label{
         color: rgb(0, 0, 0);
     }   
 }
 .boton{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
     background-color: rgb(250, 233, 3);
     color: rgb(0, 0, 0);
     padding: 10px;
+    width: 20%;
     border-radius: 5px;
     text-decoration: none;
+}
+.logologin{
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    top: 45px;
+    width: 30%;
+    height: auto;
 }
