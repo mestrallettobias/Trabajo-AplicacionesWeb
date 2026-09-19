@@ -1,6 +1,79 @@
 a{
     text-decoration: none;
 }
+.grid-layout{
+    height: auto;
+    display: grid;
+    grid-template-areas:'cabecera cabecera'
+                        'menu menu'
+                        'contenido barra'
+                        'pie pie';
+    background-color: beige;
+    grid-template-columns: 3fr 1fr;
+    border: 1px solid rgb(2, 2, 0);
+}
+
+.caja{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+    border: 5px solid rgb(0, 0, 0);
+
+}
+
+.c1{
+    grid-area: cabecera;
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.c2{
+    grid-area: menu;
+    display: grid;
+    background-color:rgb(250, 233, 3);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.c3{
+    grid-area: barra;
+    display: grid;
+    background-color: rgb(65, 91, 161);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.c4{
+    grid-area: contenido;
+    background-color:rgb(250, 233, 3);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.c5{
+    grid-area: pie;
+    background-color: rgb(75, 126, 126);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+.card{
+    background-color: rgb(14, 14, 13);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.imgcard{
+    width: 100px;
+    height: auto;
+}
 .logo{
     position: absolute;
     left: 0px;
@@ -28,7 +101,7 @@ nav ul {
     background-color:rgb(250, 233, 3);
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-evenly;
     gap: 15px;
     padding: 10px;
 }
