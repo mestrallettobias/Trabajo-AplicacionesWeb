@@ -12,13 +12,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="estilos.css">
+        
     </head>
     <body>
        <div class= "grid-layout">
-            <div class = "caja c1">                 
-                <img src="imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="logo">
-                <h1>D'Yaboo</h1>
-                <h2>Explora nuestra colección de indumentaria, accesorios y ropa interior</h2>            
+            <div class = "caja c1"> 
+                <img src="../imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="logo">   
+                <button class="btnCerrarSesion" onclick="location.href='../paginas/login.html'">Cerrar sesión</button>
+                <h1>D'Yaboo</h1>             
+                <h2>Explora nuestra colección de indumentaria</h2>            
             </div>
 
             <div class = "caja c2"> 
@@ -39,21 +41,36 @@
 
             <div class = "caja c4"> 
                 <div class="card">
-                        <h2>Producto 1</h2>
-                        <p>Descripción del producto</p>
-                        <button>Comprar</button>
-                        <img src="imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="imgcard">
+                    <div class="card-info">
+                        <h2>Remera</h2>
+                        <p class="descripcion">Remera algodon basica</p>
+                        <p class="precio">$1500</p>
+                        <button class="btn-comprar">Comprar</button>
                 </div>
+                <div class="card-imagen">
+                        <img src="../imgs/remra.jpg" alt="Imagen producto">
+                    </div>
+                </div>
+
+
                 <div class="card">
-                        <h2>Producto 2</h2>
-                        <p>Descripción del producto</p>
-                        <button>Comprar</button>
-                        <img src="imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="imgcard">
+                    <div class="card-info">
+                        <h2>Buzo con capucha</h2>
+                        <p class="descripcion">Buzo algodon con capucha</p>
+                        <p class="precio">$3500</p>
+                        <button class="btn-comprar">Comprar</button>
                 </div>
+                <div class="card-imagen">
+                        <img src="../imgs/buzo.jpg" alt="Imagen producto">
+                    </div>
+                </div>
+
             </div>
 
             <div class = "caja c5"> 
                 pie de pagina
             </div>
     </body>
+
+        <script src="../js/login.js"></script>
 </html>

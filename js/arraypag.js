@@ -1,0 +1,10 @@
+let pagsarray = ["../paginas/accesorios.html", 
+    "../paginas/calzado.html", 
+    "../paginas/indumentaria.html", 
+    "../paginas/ropainterior.html", 
+    "../paginas/login.html",
+    "../paginas/ventana.html",
+    "../js/login.js",
+    "../js/arraypags.js",
+    "../Index.html",
+    "../estilos.css",];
