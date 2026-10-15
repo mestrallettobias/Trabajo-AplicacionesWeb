@@ -1,0 +1,25 @@
+/* TEXTOS*/
+
+
+p{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgb(250, 233, 3);
+    text-align: center;
+}
+h2{
+    color: rgb(250, 233, 3);
+    text-align: center;
+}
+
+.filtro{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: top;
+    color: rgb(0, 0, 0);
+    gap: 10px;
+}

@@ -8,17 +8,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Inicio</title>
-        <link rel="icon" href="imgs/dyaboo.jfif" type="image/x-icon">
+        <link rel="icon" href="../../imgs/dyaboo.jfif" type="image/x-icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="../../estilos/estilos.css">
+        <link rel="stylesheet" href="../../estilos/btn.css">
+        <link rel="stylesheet" href="../../estilos/colors.css">
+        <link rel="stylesheet" href="../../estilos/layout.css">
+        <link rel="stylesheet" href="../../estilos/text.css">
         
     </head>
     <body>
        <div class= "grid-layout">
             <div class = "caja c1"> 
-                <img src="../imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="logo">   
-                <button class="btnCerrarSesion" onclick="location.href='../paginas/login.html'">Cerrar sesión</button>
+                <img src="../../imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="logo">   
+                <button class="btnCerrarSesion" onclick="location.href='paginas/autentificacion/login.html'">Cerrar sesión</button>
                 <h1>D'Yaboo</h1>             
                 <h2>Explora nuestra colección de indumentaria</h2>            
             </div>
@@ -27,50 +31,67 @@
 
                 <nav>
                     <ul>
-                        <li><a href="../paginas/indumentaria.html">Indumentaria</a></li>
-                        <li><a href="../paginas/calzado.html">Calzado</a></li>
-                        <li><a href="../paginas/accesorios.html">Accesorios</a></li>
-                        <li><a href="../paginas/ropainterior.html">Ropa Interior</a></li>
+                        <li><a href="../../paginas/categorias/indumentaria.html">Indumentaria</a></li>
+                        <li><a href="../../paginas/categorias/calzado.html">Calzado</a></li>
+                        <li><a href="../../paginas/categorias/accesorios.html">Accesorios</a></li>
+                        <li><a href="../../paginas/categorias/ropainterior.html">Ropa Interior</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class = "caja c3"> 
-                barra lateral
+                <h1>Filtrar por:</h1> <class="filtro">
+                <ul>
+                    <li><a href="#">Precio</a></li>
+                    <li><a href="#">Talle</a></li>
+                    <li><a href="#">Color</a></li>
             </div>
 
             <div class = "caja c4"> 
-                <div class="card">
-                    <div class="card-info">
-                        <h2>Remera</h2>
-                        <p class="descripcion">Remera algodon basica</p>
-                        <p class="precio">$1500</p>
-                        <button class="btn-comprar">Comprar</button>
-                </div>
-                <div class="card-imagen">
-                        <img src="../imgs/remra.jpg" alt="Imagen producto">
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-info">
+                            <h2>Remera</h2>
+                            <p class="descripcion">Remera algodon basica</p>
+                            <p class="precio">$1500</p>
+                            <button class="btn-comprar">Comprar</button>
+                    </div>
+                    <div class="card-imagen">
+                            <img src="../../imgs/remra.jpg" alt="Imagen producto">
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-info">
+                            <h2>Buzo con capucha</h2>
+                            <p class="descripcion">Buzo algodon con capucha</p>
+                            <p class="precio">$3500</p>
+                            <button class="btn-comprar">Comprar</button>
+                    </div>
+                    <div class="card-imagen">
+                            <img src="../../imgs/buzo.jpg" alt="Imagen producto">
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-info">
+                            <h2>Campera</h2>
+                            <p class="descripcion">Campera de abrigo</p>
+                            <p class="precio">$5000</p>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+                        <div class="card-imagen">
+                            <img src="../../imgs/campera.jpg" alt="Imagen producto">
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="card">
-                    <div class="card-info">
-                        <h2>Buzo con capucha</h2>
-                        <p class="descripcion">Buzo algodon con capucha</p>
-                        <p class="precio">$3500</p>
-                        <button class="btn-comprar">Comprar</button>
-                </div>
-                <div class="card-imagen">
-                        <img src="../imgs/buzo.jpg" alt="Imagen producto">
-                    </div>
-                </div>
-
-            </div>
 
             <div class = "caja c5"> 
                 pie de pagina
             </div>
     </body>
 
-        <script src="../js/login.js"></script>
+        <script src="../../paginas/autenticacion/login.js"></script>
 </html>

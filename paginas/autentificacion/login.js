@@ -10,7 +10,7 @@ function loguear(){
         // inicio de sesión
         if(email == "admin@dyaboo.com" && password == "admin123"){
             alert("Inicio de sesión exitoso.");
-            window.location.href = "../Index.html";
+            window.location.href = "../../Index.html";
         }
         else{
             alert("Email o contraseña incorrectos.");
