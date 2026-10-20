@@ -22,14 +22,13 @@
        <div class= "grid-layout"> 
             <div class = "caja c1"> 
                 <img src="../../imgs/dyaboo.jfif" alt="Imagen de D'Yaboo" class="logo">   
-                <button class="btnCerrarSesion" onclick="location.href='paginas/autentificacion/login.html'">Cerrar sesión</button>
+                <button class="btnCerrarSesion" onclick="location.href='../../paginas/autentificacion/login.html'">Cerrar sesión</button>
                 <h1>D'Yaboo</h1>             
                 <h2>Ropa informal masculina</h2>            
             </div>
 
             <div class = "caja c2"> 
-                <input type = "hidden" id = "page-name" value = "Inicio">
-
+                <div class ="navbar" id="navbar"></div>
             </div>
 
             <div class = "caja c3"> 
@@ -41,7 +40,9 @@
             </div>
 
             <div class = "caja c4"> 
-
+                <div class="grid-cards">
+                    
+                </div>
             </div>
 
             <div class = "caja c5"> 
@@ -49,7 +50,7 @@
             </div>
     </body>
 
-        <script src="../../paginas/autenticacion/login.js"></script>
-        <script src="./componentes/navbar.comp.js"></script>
-        <script src="./componentes/card.comp.js"></script>
+        <button class="btnCerrarSesion" onclick="location.href='../../paginas/autentificacion/login.html'">Cerrar sesión</button> 
+        <script type = "module" src="../../componentes/navbar.comp.js"></script>
+        <script src="../../componentes/card.comp.js"></script>
 </html>

@@ -21,3 +21,55 @@ a{
     width: 75px;
     height: auto;
 }
+
+.navbar {
+    background-color: #ffeb00;
+    padding: 16px 24px;
+    border-radius: 6px;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list a {
+    display: block;
+    padding: 12px 16px;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-list a:hover {
+    background-color: #111;
+    color: #ffeb00;
+}
+
+.navbar-list a:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .navbar-list {
+        gap: 6px;
+    }
+
+    .navbar-list a {
+        padding: 10px;
+    }
+}
+
+.navbar-list a.activo {
+    background-color: #111;
+    color: #ffeb00;
+}

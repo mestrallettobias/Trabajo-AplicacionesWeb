@@ -20,32 +20,36 @@ const productos = [
 ];
 
 
-productos.map(producto => {
+const cardHTML = productos.map(producto => {
+    
     const cardGrid = 
-    `
-                    <div class="grid-cards">
+    `                   
                         <div class="card">
+                            <div class="card-imagen">
+                                <img src="${producto.imagen}" alt="Imagen producto">           
+                            </div>
+
                             <div class="card-info">
                                 <h2>${producto.nombre}</h2>
                                 <p class="descripcion">${producto.descripcion}</p>
                                 <p class="precio">$${producto.precio}</p>
                                 <button class="btn-comprar">Comprar</button>
-                        </div>
-                        <div class="card-imagen">
-                                <img src="${producto.imagen}" alt="Imagen producto">
+                                <label> Cantidad: 
+                                    <input type="number" min="1" value="1" class="cantidad">
+                                </label>
                             </div>
                         </div>
-                        <label> Cantidad: 
-                            <input type="number" min="1" value="1">
-                        </label>
-                    </div>
-    `
+    `;
 
-});
+    return cardGrid;
+})
 
 
-let cardContainer = document.querySelector('.grid-layout > div.caja.c4');
+
+
+let cardContainer = document.querySelector('.grid-layout > div.caja.c4 > div.grid-cards');
 
 window.addEventListener('load', () => {
-    cardContainer.innerHTML = cardGrid;
+    cardContainer.innerHTML = cardHTML.join('');
 });
+
